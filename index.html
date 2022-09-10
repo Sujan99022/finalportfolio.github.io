@@ -1,0 +1,1122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>sujanr's portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/726/726056.png" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/726b0b9ea4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       html{
+        padding: 0;
+        margin: 0;
+        overflow: auto;
+      }
+   body{
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+        background-color: #000000;
+      } 
+::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #de156c; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #de156c; 
+}
+      .back1{
+        background: url('images/try3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+        width: 100%;
+      }
+      @media (max-width:600px) {
+        #preloader-resize{
+          max-width: 150px;
+        }
+        .column{
+          height: 60px;
+          padding-right: 0;
+       }
+       .scontainer{
+        padding-left: 1px;
+        padding-right: 1px;
+        margin-bottom: 10px;
+       }
+      }
+       #load1{
+       position: fixed;
+       width: 100%;
+      display: flex;
+      justify-content: center;
+       align-items: center;
+       top: 0;
+       left: 0;
+       height: 100vh;
+       animation: load 4s;
+       background-color: #191819;
+       z-index: 999999;
+   }
+   #vid-back{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+   }
+   .social-media{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    top: 75px;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+   }
+   #social-row{
+    flex-wrap: nowrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+#gmail,#linkedin,#watsapp,#github,#twitter,#facebook{
+    border-radius: 25px;
+    transform: scale(1);
+    transition-duration: 1s;
+    overflow: hidden;
+    width: 40%;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.363);
+    margin-bottom: 10px;
+}
+@media (max-width:700px) {
+    #gmail,#linkedin,#watsapp,#github,#twitter,#facebook{
+        border-radius: 25px;
+        transform: scale(1);
+        transition-duration: 1s;
+        overflow: hidden;
+        width: 190px;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.36);
+    }   
+}
+#gmail:hover{
+    transform: scale(1.1);
+    border-radius: 0px;
+}
+#linkedin:hover{
+    transform: scale(1.1);
+    border-radius: 0px;
+}
+#watsapp:hover{
+    transform: scale(1.1);
+    border-radius: 0px;
+}
+#github:hover{
+    transform: scale(1.1);
+    border-radius: 0px;
+}
+#twitter:hover{
+    transform: scale(1.1);
+    border-radius: 0px;
+}
+#facebook:hover{
+    transform: scale(1.1);
+    border-radius: 0px;
+}
+ #nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    border-bottom: .2px solid rgba(255, 0, 170, 0.5);
+    animation: nav-under 7s linear 0s infinite normal forwards running;
+ } 
+ @keyframes nav-under {
+  0%{
+    border-bottom: .2px solid #ff00c35d;
+  }
+  450%{
+    border-bottom: .2px solid #01b2e376;
+  }
+  80%{
+    border-bottom: .2px solid #25ce7c90;
+  }
+ }
+ #jumbo{
+   position: absolute;
+   top: 25vh;
+   right: auto;
+   right: auto;
+   background: transparent;
+   border-radius: 5px;
+   box-shadow: 2px 2px 28px rgba(0, 0, 0, 0.196);
+   background: rgba(0, 0, 0, 0.225);  
+   font-family: 'Roboto', sans-serif;
+   }
+   @media (max-width:700px){
+    #jumbo{
+        top: 16vh;
+        box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.304);
+        background: rgba(0, 0, 0, 0.045);
+    }
+   }
+   .about1,.skills,.courses,.certificate,.works1,.footer-text,.T-skills{
+    display: inline-block;
+    padding-top: 8px;
+    border-top: 3px solid #cf1767;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .5rem;
+    font-weight: 600;
+    line-height: 1.17rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+   }
+   .certificate1{
+    display: inline-block;
+    padding-top: 8px;
+    margin: 0;
+    border-top: 3px solid #cf1767;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .5rem;
+    font-weight: 600;
+    line-height: 1.17rem;
+    text-transform: uppercase;
+    font-size: 12px;
+   }
+   .home,.about,.works{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+   }
+   .education1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    border-bottom: 3px solid #cf1767;
+    width: 90px;
+    padding-bottom: 3px;
+   }
+   .education2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    border-bottom: 3px solid #cf1767;
+    width: 65px;
+    padding-bottom: 3px;
+   }
+   .education3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    border-bottom: 3px solid #cf1767;
+    width: 110px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+   }
+   .skills-back{
+        background: url('images/wheel-2000.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+   }
+   .section2{
+    background: #191819b9;
+    height: 100%;
+   }
+   .num{
+    font-size: 6.2rem; 
+    font-family: 'Roboto', sans-serif; 
+    color: #de156c;
+   }
+   .company{
+    padding: 12px;
+    margin-top: -8px;
+    margin-bottom: 16px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+   }
+  progress {
+  position: fixed;
+  top: 55px;
+  left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 7px;
+  border: none;
+  background: transparent;
+  z-index: 999999999999;
+}
+progress::-webkit-progress-bar {
+  background: transparent;
+}
+progress::-webkit-progress-value {
+  background: linear-gradient(to left, #ab0d86,#01b3e3,#25ce7b,#fdc741,#ff6b01,#ac10b8);
+  background-attachment: fixed;
+}
+progress::-moz-progress-bar {
+  background: linear-gradient(to left, #9d137d,#01b3e3,#25ce7b,#fdc741,#ff6b01,#ac10b8);
+  background-attachment: fixed;
+}
+.horizSlider {
+  position: relative;
+  white-space: nowrap;
+  overflow: auto;
+}
+@media (max-width:700px) {
+  .horizSlider{
+    width: 100vw;
+  }
+}
+.horizSlider .slide {
+  display: inline-block;
+  position: relative;
+}
+.slideText {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ff00c3;
+  text-shadow: 1px 1px 3px black;
+  z-index: 1;
+  font-size: 3em;
+  font-weight: 400;
+}
+.slideImage {
+  transform-origin: bottom left;
+}
+  #cv{
+    width: 400px;
+    padding: 5px;
+    margin: 8px 0px;
+    background-color: #de156c;
+    box-shadow: 2px 2px 6px rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .1rem;
+    transform: scale(1);
+    transition-duration: 2s;
+  }
+  @media (max-width:700px) {
+    #cv{
+      width: 300px;
+      margin-top: 25px;
+    }
+  }
+  #cv:hover{
+    transform: scale(1);
+    border:1px solid black;
+    background-color: #de156c;
+  }
+  .workback{
+    background: url('images/workbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+  .section3{
+    background: rgba(0, 0, 0, 0.532);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
+  @media (max-width:700px) {
+    #mail{
+    font-size: 20px;
+    letter-spacing: 0px;
+  }
+  progress{
+    display: none;
+  }
+  #te{
+   font-size: 20px; 
+  } 
+  }
+  #lse{
+    border-bottom: 1px solid rgb(96, 93, 93);
+  }
+  #lse:hover{
+    border-bottom: 1px solid white;
+  }
+  #parallel-container{
+    background: linear-gradient(to top,rgb(0, 0, 0),rgba(0, 0, 0, 0.796));
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+  }
+  #star{
+    position: absolute;
+    width: 100%;
+  }
+  #moon{
+    mix-blend-mode: screen;
+    position: absolute;
+    width: 100%;
+  }
+  #snow-hill{
+    position: absolute;
+    width: 100%;
+  }
+  #front-hill{
+    position: absolute;
+    width: 100%;
+  }
+  #course{
+    position: absolute;
+  }
+  .contain{
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  #alert{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 999999999;
+  }
+  .bg-alert{
+    background: #000000;
+    width: 100%;
+    height: 100vh;
+    z-index: 999999999999;
+  }
+  .rs{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.325);
+    border-radius: 8px;
+    text-shadow: none;
+   }
+   .rs1{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.325);
+    border-radius: 8px;
+    text-shadow: none;
+   }
+ .container-edu{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .info{
+  height: 100%;
+  width: 35px;
+  margin-top: -5px;
+ }
+ .card-body{
+  background: url('ima/w2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+}
+ #accordianContainer{
+  box-shadow: 2px 2px 16px black;
+ }
+ .card-header{
+  background: url('ima/w2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+ .color{
+  color: rgb(234, 238, 237);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+ } 
+ .color:hover{
+  color: #ee00ff;
+ }
+ .card{
+  transform: scale(1);
+  transition-duration: .6s;
+  animation: ani 2s linear 0s infinite normal forwards running; 
+}
+#port{
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  color: rgb(217, 207, 207);
+  background-repeat: no;
+}
+.bb:hover{
+  color: rgb(255, 0, 255);
+}
+    </style>
+</head>
+  <body onload="MyFunction()">
+    <div id="butter">
+    <progress max="100" value="0"></progress>
+ <div id="alert" class="d-lg-none d-flex justify-content-center align-items-center">
+  <div class="bg-alert">
+    <div class="alert alert-success" role="alert">
+      <h4 class="alert-heading">Alert..</h4>
+      <p>Please switch to desktop......Mobile view is not supported</p>
+      <hr>
+      <p class="mb-0">The graphics used in this website can be experienceble more in the larger display size so the mobile view is ristricted(Note: But the website is fully responive).</p>
+    </div>
+  </div>
+  </div>
+   
+    <!-- <video id="vid-back" autoplay muted loop src="images/index-bg.mp4" type="video/mp4"></video> -->
+  <section>
+    <div class="back1"></div>
+  </section>
+    <div class="sec fade-out" id="load1">
+      <img id="preloader-resize" class="img-fluid" style="width: 210px;" src="images/first.gif">
+      </div> 
+
+      <nav id="nav" class="navbar navbar-expand-lg navbar-dark" style="background: black;">
+   <!-- id="logo"     <a style="position: absolute;width:100%;" class="navbar-brand m-0" href="#">portfolio</a> -->
+     <p class="navbar-brand m-0" id="port"><span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span></p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto mr-auto" id="main-target">
+            <li class="nav-item mx-4 my-lg-1 my-3 text-center">
+              <a class="nav-link home" href="#jumbo"><span class="bb px-3">Home</span></a>
+            </li>
+            <li class="nav-item mx-4 my-lg-1 my-3 text-center">
+              <a class="nav-link about" href="#navigate-about"><span class="bb px-3">About</span></a>
+            </li>
+            <li class="nav-item mx-4 my-lg-1 my-3 text-center">
+              <a class="nav-link works" href="#navigate-work"><span class="bb px-3">Works</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>  
+
+    <!-- <nav id="nav" style="background: black;" class="nav nav-tabs nav-justified">
+        <a href="#jumbo" class="nav-item nav-link home text-white">Home</a>
+        <a href="#navigate-about" class="nav-item nav-link about text-white">About</a>
+        <a href="#navigate-work" class="nav-item nav-link works text-white">Works</a>
+    </nav> -->
+
+<div data-spy="scroll" data-target="#" id="main-container">
+    <div class="container" style="display: flex; justify-content:center;align-items:center;">
+      <div class="jumbotron" id="jumbo" style="max-width: 900px;" data-aos="flip-down" data-aos-duration="3000">
+       <p class="h3" id="hh" style="color: #ff006f; font-weight: 600;"><span>Hi,</span> <span class="text-white"> i'm Sujan R</span></p>
+        <p class="h1 text-white" id="hh2">Web Developer, UI/UX Designer</p>
+        <p class="h4 text-white mb-4" id="hh3">Worked as a freelancer in “thefreelancers.space” for two months as web designer and I have also completed my training and courses on Udemy, Coursera, GreatLearning and Infosys.</p>
+        <a class="h5 mt-5" id="hh4" style="color: #ff006f; text-decoration: none; font-weight: 600;" href="about.html">Scroll for More <i class="fa-sharp fa-solid fa-angle-down fa-bounce" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="social-media">
+      <div class="container">
+      <div class="row" id="social-row">
+        <div class="col-2 m-lg-2 text-center column b1">
+        <a href="https://mail.google.com/mail/u/1/#inbox" style="text-decoration: none;"><img id="gmail" class="img-fluid" src="images/gmail2.gif" alt="Gmail"></a>  
+        </div>
+        <div class="col-2 m-lg-2 text-center column b2">
+         <a href="https://www.linkedin.com/in/sujan-r-7312ab21b" style="text-decoration: none;"><img id="linkedin" class="img-fluid" src="images/linkedin2.gif" alt="LinkedIn"></a> 
+        </div>
+        <div class="col-2 m-lg-2 text-center column b3">
+        <a href="https://wa.me/00919902262397" style="text-decoration: none;"><img id="watsapp" class="img-fluid" src="images/watsapp.gif" alt="Whatsapp"></a>  
+        </div>
+        <div class="col-2 m-lg-2 text-center column b4">
+        <a href="https://github.com/Sujan99022"style="text-decoration: none;"><img id="github" class="img-fluid" src="images/github1.gif" alt="Github"></a>  
+        </div>
+        <div class="col-2 m-lg-2 text-center column b5">
+        <a href="https://twitter.com/Sujan31306844?t=pDB4adTSPM4QSVq71rlkiw&s=09" style="text-decoration: none;"><img id="twitter" class="img-fluid" src="images/twitter4.gif" alt="Twitter"></a>  
+        </div>
+        <div class="col-2 m-lg-2 text-center column b6">
+        <a href="https://www.facebook.com/r.sujan.10" style="text-decoration: none;"><img id="facebook" class="img-fluid" src="images/facebook3.gif" alt="FaceBook"></a>  
+        </div>
+      </div>
+    </div>
+    </div>
+
+ <div class="cover">
+    <section class="comparisonSection">
+      <div id="navigate-about"></div>
+      <div class="comparisonImage beforeImage" style="height: 20vh;">
+        <div style="background-color: black;" class="b"></div>
+        <div class="container-edu">
+          <div class="container c2">
+        <div class="about">
+            <div class="center text-center mt-4">
+              <p class="about1" data-aos="fade-right" data-aos-duration="1000">About</p> <br>
+              <p class="h3 mt-4 about1" data-aos="fade-left" data-aos-duration="2000">
+                Career Objective
+               </p>
+            </div>   
+        </div>
+        <div class="jumbotron pb-2" style="background: transparent;">
+          <p data-aos="zoom-in" data-aos-duration="1000">
+            “Seeking a challenging position in a reputed organization where I can learn new skills, expand my knowledge, and leverage my learnings. To get an opportunity where I can make the best of my potential and contribute to the organization’s growth”
+          </p>
+        </div>
+        <div class="center text-center" data-aos="fade-up" data-aos-duration="1000">
+        <p id="edu2" class="mb-0"><i class="fa-solid fa-graduation-cap fa-2x fa-bounce"></i></p>
+        <p class="h3 mt-0 mb-4 about1">
+          Education
+         </p>
+        </div>
+        <div class="row my-3" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col-lg-4 col-md-6 col-12">
+          <p class="h4 education1 mb-0">S.S.L.C</p> <br>
+          <p class="text-black mb-0">BGS English Medium School Krishnarajanagara Mysore Karnataka</p> <br>
+          <p class="d-flex justify-content-end">Percentage : 70%</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+             <p class="h4 education2 mb-0">P.U.C</p> <br>
+             <p class="text-black mb-0">Alpha PU College Krishnarajanagara Mysore Karnataka</p> <br>
+             <p class="d-flex justify-content-end">Percentage : 75%</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+             <p class="h4 education3 mb-0">B.E(CS&E)</p> <br>
+             <p class="text-black mb-0">Bahubali College of Engineering Shravanabelagola Hassan Karnataka</p> <br>
+             <p class="d-flex justify-content-end">CGP : 8.31</p>
+          </div>
+         </div>
+         
+      </div>
+      </div>
+      </div>
+      <div class="comparisonImage afterImage">
+        <img src="ima/white.jpg" alt="after">
+        <div class="container" style="position: relative; width:100%;height:100%;margin-top: 300px;">
+        <div class="row">
+          <div class="col-md-5 col-12">
+            <div class="center text-center">
+              <p class="T-skills">TECHNICAL SKILLs</p>
+            </div>
+             <ul class="mt-4" style="font-family: 'Roboto', sans-serif; line-height: 1.7em; letter-spacing: .2rem; text-transform: uppercase;">
+              <li>HTML5(Intermediate)</li>
+              <li>CSS3(Intermediate)</li>
+              <li>UI/UX Designing(Intermediate)</li>
+              <li>React JS(Intermediate)</li>
+              <li>GSAP.JS(JS Library)</li>
+              <li>Bootstrap 4(Intermediate)</li>
+              <li>Python(Basics)</li>
+              <li>JAVA(Basics)</li>
+              <li>C(Basics)</li>
+              <li>C++(Basics)</li>
+             </ul>
+          </div>
+          <div class="col-md-2 col-0">
+            
+          </div>
+          <div class="col-md-5 col-12">
+            <div class="center text-center">
+              <p class="T-skills">SOFT SKILLs</p>
+            </div>
+            <ul class="mt-4" style="font-family: 'Roboto', sans-serif; line-height: 1.7em; letter-spacing: .2rem; text-transform: uppercase;">
+              <li>Creativity</li>
+              <li>Leadership</li>
+              <li>Growth Mindset</li>
+              <li>Work Ethics</li>
+              <li>Communication</li>
+              <li>Problem-Solving</li>
+              <li>Time Management</li>
+              </ul>
+          </div>
+        </div>
+        <div class="center text-end mt-5" style="text-shadow: 2px 2px 3px rgb(0, 0, 0);"> 
+          <p style="font-family: 'Robot',sans-serif; line-height: 1.7em; letter-spacing: .2rem; text-transform: uppercase; color: #de156c;" class="h5"><span style="color: #24a5e6;">s</span><span style="color: #a90911;">c</span><span style="color: #8aa256;">r</span><span style="color: #cc802c;">o</span><span style="color: #258fc9;">l</span><span style="color: #cbacb1;">l</span> <span style="color: #e8c3cb;">f</span><span style="color: #b6932f;">o</span><span style="color: #364e7c;">r</span> <span style="color: #b54a40;">m</span><span style="color: #3ea9c9;">o</span><span style="color: #d0ecef;">r</span><span style="color: #7e9c3c;">e</span> <i class="fa-solid fa-chevron-down fa-bounce"></i></p>
+        </div>
+      </div>
+    </div>
+    </section>
+  </div>
+
+  <div class="skills-back text-white">
+    <div class="section2">
+    <div class="container py-5 text-center">
+      <p class="skills my-5" data-aos="fade-down" data-aos-duration="1000">CAPABILITIES</p>
+      <div class="row my-md-5 my-1">
+        <div class="col-md-6 col-12" data-aos="zoom-in" data-aos-duration="1000">
+           <p class="num">0 1.</p>
+           <p class="text-center" style="font-size: 30px;">Web Developer</p>
+           <p style="font-size: 20px;">Technologies : HTML, CSS3, Bootstrap4, JS</p>
+           <p style="font-size: 20px;">Duration : Approximately Two years</p>
+           <p class="text-justify" style="color: rgb(217, 210, 210);">I have done several projects using the above mentioned technologies including this portfolio, and also i have completed several courses on Coursera, GreatLearning, Udemy and Infosys.</p>
+        </div>
+        <div class="col-md-6 col-12" data-aos="zoom-in" data-aos-duration="1000">
+          <p class="num">02.</p>
+          <p style="font-size: 30px;">UI/UX Designer</p>
+          <p style="font-size: 20px;">Platform : Adobe XD</p>
+          <p style="font-size: 20px;">Duration : Approximately One Year</p>
+          <p class="text-justify" style="color: rgb(217, 210, 210);">After learning the UI designing first i started designing the prototype of a website then on basis of this prototype i use to implement the websites(By following this steps i learnt how to develop an website in more effective(dynamic) way and also how to make it more responsive).</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="contain">
+  <section id="parallel-container" style="text-shadow: none;">
+      <img id="star" src="paral/1.png" alt="">
+      <img id="moon"  src="paral/2.png" alt="">
+      <img id="snow-hill"  src="paral/3.png" alt="">
+      <img id="front-hill" src="paral/4.png" alt="">
+      <div class="s" style="height: 100vh; width:100%; display:flex; justify-content:center;align-items:center;">
+      <div class="course text-white py-5">
+      <div class="center py-5">
+      <p id="co" class="courses">Courses</p>
+      </div>
+      <div class="container">
+        <div class="right">
+        <p class="h4" style="font-family: 'Roboto', sans-serif; letter-spacing: .2rem; font-size: 20px; text-transform:uppercase; font-weight: 600;">Infosys</p>
+        <p class="h5 company" style="color: rgb(255, 255, 255);">Adobe XD from beginner to expert(UI/UX design), CSS3, HTML5,
+           Mastering Bootstrap 4</p>
+          </div>
+          <div class="right">
+           <p class="h4" style="font-family: 'Roboto', sans-serif; letter-spacing: .2rem; font-size: 20px; text-transform:uppercase; font-weight: 600">Coursera</p>
+        <p class="h5  company" style="color: rgb(255, 255, 255);">Building Portfolio website with HTML and CSS</p>         
+      </div>
+      <div class="right">
+        <p class="h4 mt-2" style="font-family: 'Roboto', sans-serif; letter-spacing: .2rem; font-size: 20px; text-transform:uppercase; font-weight: 600">Udemy</p>
+        <p class="h5 company" style="color: rgb(255, 255, 255);">The Bootstrap 4 Bootcamp,CSS, The complete JS course</p>       
+      </div>
+      <div class="right">
+        <p class="h4" style="font-family: 'Roboto', sans-serif; letter-spacing: .2rem; font-size: 20px; text-transform:uppercase; font-weight: 600">GreatLearning</p>
+        <p class="h5 company mb-4" style="color: rgb(255, 255, 255);">Front End Development HTML and CSS, JavaScript, UI/UX Design</p>
+      </div>
+      </div>
+    </div>
+    </div>
+  </section>
+</div>
+<div class="con" style="position: relative; width:100%;height:100%; background:#000000;">
+  <section class="certificate-body mt-5 text-white pb-4 px-md-3" style="background: linear-gradient(to right,#000000 ,#000000); margin-top: 240px;">
+    <div class="center text-center">
+  <p class="certificate mt-5 mb-3">CERTIFICATES</p>
+    </div>
+    <div class="center text-center d-block d-md-none">
+  <p class="certificate1 my-2">Horizontal Slide <i class="fa fa-arrow-right" aria-hidden="true"></i></p>
+    </div>
+   
+    <section class="horizSlider m-lg-4">
+      <div class="slide">
+        <h2 class="slideText">01</h2>
+        <img width="100%" height="500" class="slideImage" src="ima/1.jpg" alt="Filler image">
+      </div>
+      <div class="slide">
+        <h2 class="slideText">02</h2>
+        <img width="100%" height="500" class="slideImage" src="ima/2.jpg" alt="Filler image">
+      </div>
+      <div class="slide">
+        <h2 class="slideText">03</h2>
+        <img width="100%" height="500" class="slideImage" src="ima/3.jpg" alt="Filler image">
+      </div>
+      <div class="slide">
+        <h2 class="slideText">04</h2>
+        <img width="100%" height="500" class="slideImage" src="ima/4.png" alt="Filler image">
+      </div>
+      <div class="slide">
+        <h2 class="slideText">05</h2>
+        <img width="100%" height="500" class="slideImage" src="ima/5.jpg" alt="Filler image">
+      </div>
+      <div class="slide">
+        <h2 class="slideText">06</h2>
+        <img width="100%" height="500" class="slideImage" src="ima/6.jpg" alt="Filler image">
+      </div>
+      <div class="slide">
+        <h2 class="slideText">07</h2>
+        <img width="100%" height="500" class="slideImage" src="ima/7.jpg" alt="Filler image">
+      </div>
+      <div class="slide">
+        <h2 class="slideText">08</h2>
+        <img width="100%" height="500" class="slideImage" src="ima/8.png" alt="Filler image">
+      </div>
+    </section>
+    <div class="center text-center">
+      <a id="cv" class="btn btn-dark" href="resume/Resume Su.pdf" download="resume">DOWNLOAD CV</a>
+    </div>
+  </section>
+</div>
+<div id="navigate-work"></div>
+  <section class="workback" style="position: relative; width:100%;height:100%">
+    <div class="section3">
+    <div class="center text-center">
+      <p class="works1 my-5">WORKS</p>
+        </div>
+        <div class="container my-5">
+          <div id="accordianContainer">
+            <div class="card" data-aos="fade-right" data-aos-duration="2000">
+              <div class="card-header text-center" data-toggle="collapse" data-target="#my">
+                <button class="btn color">Project 1</button>
+              </div>
+              <div class="collapse" id="my" data-parent="#accordianContainer">
+                <div class="card-body">
+                 <div class="row">
+                   <div class="col-lg-6 col-12 pt-lg-5 pt-2 order-2 order-lg-1 rs1" data-aos="zoom-in" data-aos-duration="2000">   <!--skewElem--> 
+                       <p class="h2"><span style="color: #ee00ff;">E</span>xplore Karnataka</p>
+                       <p class="h4"><b>Duration</b>: Ninty Seven Days</p>
+                       <p class="h4"><b>Technologies Used</b>: HTML5, CSS3, Bootstrap 4, React JS</p>
+                       <p class="h5"><b>Project Description</b>:</p>
+                       <ul>
+                         <li>It is a tourism based website(where it consists of top 10 tourist places
+                           to visit in all 30 districts of karnataka)</li>
+                         <li>This website consists of High-quality photographs</li>
+                         <li>A brief summary of the area, with highlights of important places</li>
+                         <li>Basic information of the places along with their location</li>
+                       </ul>
+                       <a href="" class="h4 d-flex justify-content-center align-items-center text-white ts" style="text-decoration: none;"><span style="color: rgb(255,128,0);">V</span>isit website&nbsp;<i style="color: rgb(177, 39, 39); --fa-animation-duration: 5s;" class="fa-solid fa-link fa-flip"></i></a>
+                     </div>
+                   <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center order-1 order-lg-2 rs" data-aos="flip-down" data-aos-duration="2000">
+                     <img class="d-block img-fluid media" src="images/Group 1.png">
+                   </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-duration="2000">
+              <div class="card-header text-center" data-toggle="collapse" data-target="#m">
+                <button class="btn color" >Project 2</button>
+              </div>
+              <div class="collapse" id="m" data-parent="#accordianContainer">
+                <div class="card-body">
+                 <div class="row mt-4">
+                   <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center rs">
+                         <img class="d-block img-fluid" src="">
+                   </div>
+                   <div class="col-lg-6 col-12 rs1">
+                     <p class="h2"><span style="color: #ee00ff;">D</span>ream Life Insurance</p>
+                     <p class="h4"><b>Duration</b>: Forty Two Days</p>
+                     <p class="h4"><b>Technologies Used</b>: HTML5, CSS3, Bootstrap 4</p>
+                     <p class="h5"><b>Project Description</b>:</p>
+                     <ul>
+                       <li>It is an insurance website. The goal of the project is to maintain all
+                         activities of the insurance system</li>
+                       <li>It consists of the basic information of life insurance, motor insurance,
+                           etc</li>
+                     </ul>
+                     <a href="" class="h4 d-flex justify-content-center align-items-center text-white ts" style="text-decoration: none;"><span style="color: rgb(255,128,0);">V</span>isit website&nbsp;<i style="color: rgb(177, 39, 39); --fa-animation-duration: 5s;" class="fa-solid fa-link fa-flip"></i></a>
+                   </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-aos="fade-right" data-aos-duration="2000">
+              <div class="card-header text-center" data-toggle="collapse" data-target="#y" >
+                <button class="btn color" >Project 3</button>
+              </div>
+              <div class="collapse" id="y" data-parent="#accordianContainer">
+                <div class="card-body">
+                 <div class="row mt-4">
+                   <div class="col-lg-6 col-12 pt-lg-5 pt-2 order-2 order-lg-1 rs1">
+                     <p class="h2"><span style="color:#ee00ff;">P</span>C Games Website</p>
+                     <p class="h4"><b>Duration</b>: Fifty Six Days</p>
+                     <p class="h4"><b>Technologies Used</b>: HTML5, CSS3, Bootstrap 4, React JS</p>
+                     <p class="h5"><b>Project Description</b>:</p>
+                     <ul>
+                       <li>This website has a list of pc games</li>
+                       <li>Here I have prepared a section of best games, action games, racing
+                         games and many more</li>
+                       <li>The small description about the particular selected game will be
+                         provided(It includes system requirements and also size of the game)</li>
+                       </ul>
+                       <a href="https://www.devildreamgamezone.site" class="h4 d-flex justify-content-center align-items-center text-white ts" style="text-decoration: none;"><span style="color: rgb(255,128,0);">V</span>isit website&nbsp;<i style="color: rgb(177, 39, 39); --fa-animation-duration: 5s;" class="fa-solid fa-link fa-flip"></i></a>
+                   </div>
+                   <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center order-1 order-lg-2 rs">
+                      <img class="d-block img-fluid" src="images/Group 9.png" alt="">
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-duration="2000">
+              <div class="card-header text-center"  data-toggle="collapse" data-target="#a1">
+                <button class="btn color" >Project 4</button>
+              </div>
+              <div class="collapse" id="a1" data-parent="#accordianContainer">
+                <div class="card-body">
+                 <div class="row mt-4">
+                   <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center rs">
+                     <img class="d-block img-fluid" src="images/Group 2.png" >
+                   </div>
+                   <div class="col-lg-6 col-12 pt-lg-5 pt-2 rs1" data-aos="zoom-in">
+                     <p class="h2"><span style="color: #ee00ff;">G</span>uess The Number Game</p>
+                     <p class="h4"><b>Duration</b>: nine Days</p>
+                     <p class="h4"><b>Technologies Used</b>: HTML5, CSS3, React JS</p>
+                     <p class="h5"><b>Project Description</b>:</p>
+                     <ul>
+                       <li>It is a game played on the browser(Browser based game/flash game)</li>
+                       <li>We need to keep on guessing the number until it matches the key
+                         number</li>
+                       <li>We need to guess the number between zero to twenty</li>
+                       </ul>
+                       <a href="" class="h4 d-flex justify-content-center align-items-center text-white ts" style="text-decoration: none;"><span style="color: rgb(255,128,0);">V</span>isit website&nbsp;<i style="color: rgb(177, 39, 39); --fa-animation-duration: 5s;" class="fa-solid fa-link fa-flip"></i></a>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-aos="fade-right" data-aos-duration="2000">
+              <div class="card-header text-center" data-toggle="collapse" data-target="#a2">
+                <button class="btn color" >Project 5</button>
+              </div>
+              <div class="collapse" id="a2" data-parent="#accordianContainer">
+                <div class="card-body">
+                 <div class="row mt-4">
+                   <div class="col-lg-6 col-12 pt-lg-5 pt-2 order-2 order-lg-1 rs1">
+                     <p class="h2"><span style="color: #ee00ff;">P</span>ing Game</p>
+                     <p class="h4"><b>Duration</b>: fifteen Days</p>
+                     <p class="h4"><b>Technologies Used</b>: HTML5, CSS3, React JS</p>
+                     <p class="h5"><b>Project Description</b>:</p>
+                     <ul>
+                       <li>It is a game played on the browser(Browser based game/flash game)</li>
+                       <li>It is a multiplayer game(where palyer one is p1 and player two is p2).</li>
+                       <li>Here this game is played with dice(The user who makes the more score
+                         will win the game NOTE:-If dice roll =1 then player is out )</li>
+                       </ul>
+                       <a href="" class="h4 d-flex justify-content-center align-items-center text-white ts" style="text-decoration: none;"><span style="color: rgb(255,128,0);">V</span>isit website&nbsp;<i style="color: rgb(177, 39, 39); --fa-animation-duration: 5s;" class="fa-solid fa-link fa-flip"></i></a>
+                   </div>
+                   <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center order-1 order-lg-2  rs">
+                     <img class="d-block img-fluid" src="images/Group 5.png">
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-duration="2000">
+              <div class="card-header text-center" data-toggle="collapse" data-target="#a3">
+                <button class="btn color">Project 6</button>
+              </div>
+              <div class="collapse" id="a3" data-parent="#accordianContainer">
+                <div class="card-body">
+                 <div class="row mt-4">
+                   <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center rs">
+                     <img class="img-fluid w-100" src="">
+                   </div>
+                   <div class="col-lg-6 col-12 pt-lg-5 pt-2 rs1">
+                     <p class="h2"><span style="color: #ee00ff;">P</span>sudo Game</p>
+                     <p class="h4"><b>Duration</b>: nine Days</p>
+                     <p class="h4"><b>Technologies Used</b>: HTML5, CSS3, React JS</p>
+                     <p class="h5"><b>Project Description</b>:</p>
+                     <ul>
+                       <li>It is a game played on the browser(Browser based game/flash game)</li>
+                       <li>We need to keep on guessing the number until it matches the key
+                         number</li>
+                       <li>We need to guess the number between zero to twenty</li>
+                       </ul>
+                       <a href="" class="h4 d-flex justify-content-center align-items-center text-white ts" style="text-decoration: none;"><span style="color: rgb(255,128,0);">V</span>isit website&nbsp;<i style="color: rgb(177, 39, 39); --fa-animation-duration: 5s;" class="fa-solid fa-link fa-flip"></i></a>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-aos="fade-right" data-aos-duration="2000">
+              <div class="card-header text-center" data-toggle="collapse" data-target="#a4">
+                <button class="btn color" >Project 7</button>
+              </div>
+              <div class="collapse" id="a4" data-parent="#accordianContainer">
+                <div class="card-body">
+                 <div class="row mt-4">
+                   <div class="col-lg-6 col-12 pt-lg-5 pt-2 order-2 order-lg-1 rs1">
+                     <p class="h2"><span style="color: #ee00ff;">A</span>urora Grove</p>
+                     <p class="h4"><b>Duration</b>: five Days</p>
+                     <p class="h4"><b>Technologies Used</b>: HTML5, CSS3, Bootstrap 4</p>
+                     <p class="h5"><b>Project Description</b>:</p>
+                     <ul>
+                       <li>Infosys web development course project(A simple web page developed
+                         using HTML, CSS, BS4 ang React JS).</li>
+                       </ul>
+                       <a href="" class="h4 d-flex justify-content-center align-items-center text-white ts" style="text-decoration: none;"><span style="color: rgb(255,128,0);">V</span>isit website&nbsp;<i style="color: rgb(177, 39, 39); --fa-animation-duration: 5s;" class="fa-solid fa-link fa-flip"></i></a>
+                   </div>
+                   <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center order-1 order-lg-2 rs">
+                     <img class="d-block img-fluid" src="images/Group 4.png" >
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-duration="2000">
+              <div class="card-header text-center" data-toggle="collapse" data-target="#a5">
+                <button class="btn color" >Project 8</button>
+              </div>
+              <div class="collapse" id="a5" data-parent="#accordianContainer">
+                <div class="card-body">
+                 <div class="row mt-4">
+                   <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center rs">
+                     <img class="d-block img-fluid" src="images/Group 6.png" >
+                   </div>
+                   <div class="col-lg-6 col-12 pt-lg-5 pt-2 rs1">
+                     <p class="h2"><span style="color: #ee00ff;">T</span>rivago</p>
+                     <p class="h4"><b>Duration</b>: Two Days</p>
+                     <p class="h4"><b>Technologies Used</b>: HTML5, CSS3</p>
+                     <p class="h5"><b>Project Description</b>:</p>
+                     <ul>
+                       <li>Udemy web development course project(Single page simple web page
+                         design).</li>
+                       </ul>
+                       <a href="" class="h4 d-flex justify-content-center align-items-center text-white ts" style="text-decoration: none;"><span style="color: rgb(255,128,0);">V</span>isit website&nbsp;<i style="color: rgb(177, 39, 39); --fa-animation-duration: 5s;" class="fa-solid fa-link fa-flip"></i></a>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-aos="fade-right" data-aos-duration="2000">
+              <div class="card-header text-center" data-toggle="collapse" data-target="#a6">
+                <button class="btn color" >Project 9</button>
+              </div>
+              <div class="collapse" id="a6" data-parent="#accordianContainer">
+                <div class="card-body">
+                 <div class="row mt-4">
+                   <div class="col-lg-6 col-12 pt-lg-5 pt-2 order-2 order-lg-1 rs1">
+                     <p class="h2"><span style="color: #ee00ff;">P</span>atient Database Management System</p>
+                     <p class="h4"><b>Duration</b>: twenty Days</p>
+                     <p class="h4"><b>Technologies Used</b>: SQL,JS,PHP</p>
+                     <p class="h5"><b>Project Description</b>:</p>
+                     <ul>
+                       <li>It is a Database Management System(DBMS) Mini project</li>
+                       <li>The patient Patient Record Management System is a centralized
+                         database containing the in-patient records</li>
+                       </ul>
+                       <a href="" class="h4 d-flex justify-content-center align-items-center text-white ts" style="text-decoration: none;"><span style="color: rgb(255,128,0);">G</span>et source code&nbsp;<i style="color: rgb(177, 39, 39); --fa-animation-duration: 5s;" class="fa-solid fa-link fa-flip"></i></a>
+                   </div>
+                   <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center order-1 order-lg-2 rs">
+                     <img class="d-block img-fluid" src="images/Group 3.png" >
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-duration="2000">
+              <div class="card-header text-center" data-toggle="collapse" data-target="#a7">
+                <button class="btn color">Project 10</button>
+              </div>
+              <div class="collapse" id="a7" data-parent="#accordianContainer">
+                <div class="card-body">
+                 <div class="row mt-4">
+                   <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center rs">
+                     <img style="width: 50%;" class="d-block img-fluid" src="images/Group 7.png" >
+                   </div>
+                   <div class="col-lg-6 col-12 pt-lg-5 pt-2 rs1">
+                     <p class="h2"><span style="color: #ee00ff;">R</span>emainder app</p>
+                     <p class="h4"><b>Duration</b>: fifteen Days</p>
+                     <p class="h4"><b>Technologies Used</b>: XML, JAVA</p>
+                     <p class="h5"><b>Project Description</b>:</p>
+                     <ul>
+                       <li>It is a Mobile Application Development(MAD) Mini Project.</li>
+                       <li>Developed an android package kit and to install it on the android
+                         mobiles</li>
+                       </ul>
+                       <a href="" class="h4 d-flex justify-content-center align-items-center text-white ts" style="text-decoration: none;"><span style="color: rgb(255,128,0);">G</span>et source code&nbsp;<i style="color: rgb(177, 39, 39); --fa-animation-duration: 5s;" class="fa-solid fa-link fa-flip"></i></a>
+                   </div>
+                  </div>
+         
+                </div>
+              </div>
+            </div>
+            <div class="card" data-aos="fade-right" data-aos-duration="2000">
+              <div class="card-header text-center" data-toggle="collapse" data-target="#a8">
+                <button class="btn color">Project 11</button>
+              </div>
+              <div class="collapse" id="a8" data-parent="#accordianContainer">
+                <div class="card-body">
+                 <div class="row mt-4 mb-4">
+                   <div class="col-lg-6 col-12 pt-lg-5 pt-2 order-2 order-lg-1 rs1">
+                     <p class="h2"><span style="color: #ee00ff;">F</span>ire Wall</p>
+                     <p class="h4"><b>Duration</b>: thirty Days</p>
+                     <p class="h4"><b>Technologies Used</b>: GLUT, C++</p>
+                     <p class="h5"><b>Project Description</b>:</p>
+                     <ul>
+                       <li>It is a Computer Graphics(CG) mini project.</li>
+                       <li>The project Firewall is based on the concept of Network Security</li>
+                       </ul>
+                       <a href="" class="h4 d-flex justify-content-center align-items-center text-white ts" style="text-decoration: none;"><span style="color: rgb(255,128,0);">G</span>et source code&nbsp;<i style="color: rgb(177, 39, 39); --fa-animation-duration: 5s;" class="fa-solid fa-link fa-flip"></i></a>
+                   </div>
+                   <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center order-1 order-lg-2 rs">
+                     <img class="d-block img-fluid" src="images/Group 8.png" >
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>  
+  <section class="footer text-white" style="background: black; padding: 100px 0px; position: inherit; width: 100%; height: 100%;">
+    <div class="container">
+        <div class="center text-center">
+          <p style="margin: 20px 0px; margin-bottom: 80px;" class="footer-text text-center" data-aos="zoom-out">Get in touch</p>
+        </div>
+        <p id="te" class="h2 text-justify" style=" font-family: 'Roboto', sans-serif; letter-spacing: 3px;" data-aos="zoom-in" data-aos-duration="2000">I'm happy to connect, listen and help. Let's work together and build something awesome. Let's turn your idea to an even greater <a style="color:#de156c; text-decoration: none;" id="lse" href="#jumbo">Email Me</a>.</p>
+       <div class="row">
+        <div class="col-md-6 col-12">
+        <p class="mt-4 py-0 h3" style="color: rgb(69, 64, 64);" data-aos="fade-right" data-aos-duration="2000">Call Me</p>
+        <p class="mb-4 py-0 h3"style="font-family: 'Roboto', sans-serif;" data-aos="fade-left" data-aos-duration="2000">00919902262397</p>  
+        </div>
+        <div class="col-md-6 col-12">
+        <p class="mt-4 py-0 h3" style="color: rgb(69, 64, 64);"data-aos="fade-left" data-aos-duration="2000">Social</p>
+        <p class="mb-4 py-0 h3" style="font-family: 'Roboto', sans-serif;" data-aos="fade-right" data-aos-duration="2000">Facebook/Twitter/LimkedIn</p>
+        </div>
+       </div>
+      </div>
+      </section>
+      <section class="info-container">
+      <p style="background-color: black; margin-bottom: 0;" class="text-center pb-5 h5"><span style="color: rgb(69, 64, 64);">Designed by</span><span style="letter-spacing: 3px; color:#cf1767; text-transform: uppercase; line-height: 7px;"> Sujan R</span><span> <img class="info" src="ima/info.gif"></span></p>
+    </section>
+    </div>
+  </div>
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="butter.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script defer>
+      AOS.init();
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,17 @@
+{
+  "name": "s2",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev":"parcel src/index.html",
+    "prod":"parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "smooth-scrollbar": "^8.7.5"
+  },
+  "devDependencies": {},
+  "description": ""
+}
