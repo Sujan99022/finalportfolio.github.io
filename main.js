@@ -74,7 +74,7 @@ let t1 = gsap.timeline({
 
 t1.from('#star', { y: '100%', duration: 1 ,delay:2})
   .from('#snow-hill', { y: '100%', duration: 2.2 },2.4)
-  .from('#front-hill', { y: '100%', duration: 3,},3.4)
+  .from('#front-hill', { y: '100%', duration: 2.8,},3.4)
   .from("#moon", { y: '100%', duration: 1.2 })
   .from('.right', { duration: 1.2, y: '100vh', delay: 0 })
   .fromTo('#co', { opacity: 0, scale: 0, rotation: 720 }, { duration: .8, opacity: 1, scale: 1, rotation: 0 })
