@@ -72,7 +72,7 @@ let t1 = gsap.timeline({
   }
 });
 
-t1.from('#star', { y: '100%', duration: 1 ,delay:2})
+t1.from('#star', { y: '100%', duration: 1 ,delay:1})
   .from('#snow-hill', { y: '100%', duration: 2.2 },2.4)
   .from('#front-hill', { y: '100%', duration: 2.8,},3.4)
   .from("#moon", { y: '100%', duration: 1.2 })
