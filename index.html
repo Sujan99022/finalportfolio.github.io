@@ -289,6 +289,14 @@ progress::-moz-progress-bar {
   background: linear-gradient(to left, #9d137d,#01b3e3,#25ce7b,#fdc741,#ff6b01,#ac10b8);
   background-attachment: fixed;
 }
+@media (max-width:600) {
+  progress::-webkit-progress-value {
+  display: none;
+} 
+progress::-moz-progress-bar {
+  display: none;
+}
+}
 .horizSlider {
   position: relative;
   white-space: nowrap;
@@ -496,7 +504,7 @@ progress::-moz-progress-bar {
   <body onload="MyFunction()">
     <div id="butter">
     <progress max="100" value="0"></progress>
- <div id="alert" class="d-lg-none d-flex justify-content-center align-items-center">
+ <div id="alert" class="d-sm-none d-flex justify-content-center align-items-center">
   <div class="bg-alert">
     <div class="alert alert-success" role="alert">
       <h4 class="alert-heading">Alert..</h4>
